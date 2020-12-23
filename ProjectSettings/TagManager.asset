@@ -42,3 +42,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Frame
+    uniqueID: 1071305435
+    locked: 0
+  - name: Level
+    uniqueID: 3672816119
+    locked: 0
+  - name: UI
+    uniqueID: 2966274277
+    locked: 0
