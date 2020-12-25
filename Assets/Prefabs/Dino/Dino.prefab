@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4694417042922884384}
   - component: {fileID: 30997791630545618}
   - component: {fileID: 4943647989712925444}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Dino
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,7 +149,7 @@ GameObject:
   - component: {fileID: 3736185639742560769}
   - component: {fileID: 1687890282706072653}
   - component: {fileID: 1687890282706072652}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Dino
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -191,7 +191,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 5
+  m_Constraints: 4
 --- !u!58 &1687890282706072654
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -237,7 +237,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"Grounded","value":{"$content":true,"$type":"System.Boolean"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"collection":{"$content":[{"name":"Grounded","value":{"$content":true,"$type":"System.Boolean"},"$version":"A"},{"name":"Foresight","value":{"$content":1.5,"$type":"System.Single"},"$version":"A"},{"name":"Jump
+      Power","value":{"$content":10.0,"$type":"System.Single"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences: []
 --- !u!114 &1687890282706072652
 MonoBehaviour:
