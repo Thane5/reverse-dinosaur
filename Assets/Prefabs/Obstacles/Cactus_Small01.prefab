@@ -55,6 +55,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5783062596713458095, guid: ed9567c02480f7843bdf068deba9ed05, type: 3}
+      propertyPath: m_Size.x
+      value: 0.14849715
+      objectReference: {fileID: 0}
+    - target: {fileID: 5783062596713458095, guid: ed9567c02480f7843bdf068deba9ed05, type: 3}
+      propertyPath: m_Size.y
+      value: 0.33028722
+      objectReference: {fileID: 0}
+    - target: {fileID: 5783062596713458095, guid: ed9567c02480f7843bdf068deba9ed05, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.16538978
+      objectReference: {fileID: 0}
     - target: {fileID: 9040138125154075315, guid: ed9567c02480f7843bdf068deba9ed05, type: 3}
       propertyPath: m_Name
       value: Cactus_Small01
