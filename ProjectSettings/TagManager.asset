@@ -5,11 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Obstacle
+  - Dead Dino
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Player
+  - Dino
   - Water
   - UI
   - Obstacles
