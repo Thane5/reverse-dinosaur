@@ -67,13 +67,13 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 0.16538978
       objectReference: {fileID: 0}
+    - target: {fileID: 9040138125154075313, guid: ed9567c02480f7843bdf068deba9ed05, type: 3}
+      propertyPath: _data._json
+      value: '{"declarations":{"collection":{"$content":[{"name":"Big Obstacle","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      objectReference: {fileID: 0}
     - target: {fileID: 9040138125154075315, guid: ed9567c02480f7843bdf068deba9ed05, type: 3}
       propertyPath: m_Name
       value: Cactus_Small01
-      objectReference: {fileID: 0}
-    - target: {fileID: 9040138125154075315, guid: ed9567c02480f7843bdf068deba9ed05, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed9567c02480f7843bdf068deba9ed05, type: 3}

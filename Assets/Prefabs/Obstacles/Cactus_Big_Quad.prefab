@@ -127,13 +127,13 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 0.46084106
       objectReference: {fileID: 0}
+    - target: {fileID: 9040138125154075313, guid: ed9567c02480f7843bdf068deba9ed05, type: 3}
+      propertyPath: _data._json
+      value: '{"declarations":{"collection":{"$content":[{"name":"Big Obstacle","value":{"$content":true,"$type":"System.Boolean"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      objectReference: {fileID: 0}
     - target: {fileID: 9040138125154075315, guid: ed9567c02480f7843bdf068deba9ed05, type: 3}
       propertyPath: m_Name
       value: Cactus_Big_Quad
-      objectReference: {fileID: 0}
-    - target: {fileID: 9040138125154075315, guid: ed9567c02480f7843bdf068deba9ed05, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed9567c02480f7843bdf068deba9ed05, type: 3}

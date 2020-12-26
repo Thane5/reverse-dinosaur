@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Obstacle
   - Dead Dino
+  - Small Obstacle
   layers:
   - Default
   - TransparentFX
