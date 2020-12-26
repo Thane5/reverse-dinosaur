@@ -35,6 +35,7 @@ namespace Ludiq.Generated.Aot
 	// float.op_LessThan
 	// float.op_LessThanOrEqual
 	// float.ToString
+	// Ludiq.AotList..ctor
 	// string.Concat
 	// string.op_Equality
 	// string.op_Inequality
@@ -339,6 +340,7 @@ namespace Ludiq.Generated.Aot
 	// UnityEngine.FrictionJoint2D.op_Equality
 	// UnityEngine.FrictionJoint2D.op_Implicit
 	// UnityEngine.FrictionJoint2D.op_Inequality
+	// UnityEngine.GameObject..ctor
 	// UnityEngine.GameObject.CompareTag
 	// UnityEngine.GameObject.Destroy
 	// UnityEngine.GameObject.GetComponent
@@ -513,6 +515,7 @@ namespace Ludiq.Generated.Aot
 	// UnityEngine.Rigidbody2D.op_Implicit
 	// UnityEngine.Rigidbody2D.op_Inequality
 	// UnityEngine.Rigidbody2D.position
+	// UnityEngine.Rigidbody2D.simulated
 	// UnityEngine.Rigidbody2D.velocity
 	// UnityEngine.RuntimeAnimatorController.op_Equality
 	// UnityEngine.RuntimeAnimatorController.op_Implicit
@@ -1031,6 +1034,13 @@ namespace Ludiq.Generated.Aot
 			global::Ludiq.ReflectionInvoker optimized = new global::Ludiq.ReflectionInvoker(default(global::System.Reflection.MethodInfo));
 			optimized.Invoke(default(float), arg0);
 			optimized.Invoke(default(object[]));
+		}
+		
+		// Ludiq.AotList..ctor
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void Ludiq_AotList_ctor()
+		{
+			new Ludiq.AotList();
 		}
 		
 		// string.Concat
@@ -4586,6 +4596,13 @@ namespace Ludiq.Generated.Aot
 			optimized.Invoke(default(object[]));
 		}
 		
+		// UnityEngine.GameObject..ctor
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void UnityEngine_GameObject_ctor()
+		{
+			new UnityEngine.GameObject();
+		}
+		
 		// UnityEngine.GameObject.CompareTag
 		[global::UnityEngine.Scripting.PreserveAttribute()]
 		public static void UnityEngine_GameObject_CompareTag()
@@ -6626,6 +6643,18 @@ namespace Ludiq.Generated.Aot
 			global::Ludiq.InstancePropertyAccessor<UnityEngine.Rigidbody2D, UnityEngine.Vector2> optimized = new global::Ludiq.InstancePropertyAccessor<UnityEngine.Rigidbody2D, UnityEngine.Vector2>(default(global::System.Reflection.PropertyInfo));
 			optimized.GetValue(default(global::UnityEngine.Rigidbody2D));
 			optimized.SetValue(default(global::UnityEngine.Rigidbody2D), default(global::UnityEngine.Vector2));
+		}
+		
+		// UnityEngine.Rigidbody2D.simulated
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void UnityEngine_Rigidbody2D_simulated()
+		{
+			global::UnityEngine.Rigidbody2D target = default(global::UnityEngine.Rigidbody2D);
+			bool accessor = target.simulated;
+			target.simulated = default(bool);
+			global::Ludiq.InstancePropertyAccessor<UnityEngine.Rigidbody2D, bool> optimized = new global::Ludiq.InstancePropertyAccessor<UnityEngine.Rigidbody2D, bool>(default(global::System.Reflection.PropertyInfo));
+			optimized.GetValue(default(global::UnityEngine.Rigidbody2D));
+			optimized.SetValue(default(global::UnityEngine.Rigidbody2D), default(bool));
 		}
 		
 		// UnityEngine.Rigidbody2D.velocity
