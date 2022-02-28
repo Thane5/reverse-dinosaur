@@ -174,6 +174,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -183,8 +184,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -1165,6 +1166,50 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      3: 6578435675685828166
+      0: 1591971702412848710
+      dino_run01: 1287737370008702579
+      Bush_small_triple: 5184814259491743372
+      H: -780680173500446476
+      6: 8966162810490405629
+      5: -5791226771513326035
+      game-sprites-1x_32: -8061426622413541954
+      game-sprites-1x_27: 8220952854821196056
+      Game Over: 8943584163363448466
+      game-sprites-1x_0: 677806548231562682
+      Cactus_small02: 2817903392586697966
+      Bush_big_quad: 1099003513859189391
+      Cactus_small01: -7995739385796035806
+      game-sprites-1x_41: 5847636508327507255
+      game-sprites-1x_11: -20028697515698209
+      game-sprites-1x_1: 6904806506813783939
+      8: -1863308257657602854
+      Cactus_small03: 5514949653197670757
+      Cloud: 5498146596012494664
+      game-sprites-1x_8: 3585486464217208356
+      2: 8307362750397355561
+      Pterodactylus02: -5211540755809827911
+      9: -46347843643955104
+      game-sprites-1x_10: 2105996879307202165
+      4: -809671309972027964
+      dino_dead: 2564473045483024839
+      Bush_big_double: 9039866199306172655
+      game-sprites-1x_44: 6540926062062860029
+      I: -3897567481540015385
+      game-sprites-1x_9: 3742707787918154315
+      Cactus_big02: -718922217660671193
+      Bush_small_double: 4281348658013457812
+      dino_jump: -3385826629360644514
+      1: -7999279621469096953
+      game-sprites-1x_12: 4884222023868037154
+      7: 3780959233939320762
+      dino_run02: -3458725596616057203
+      Ground: 8757974542026303689
+      game-sprites-1x_14: 4145083506505075690
+      Cactus_big01: -6809984738106157321
+      Pterodactylus01: 4060828845305630774
+      game-sprites-1x_13: -7094806285273694685
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
