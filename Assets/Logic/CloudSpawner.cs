@@ -19,7 +19,6 @@ public class CloudSpawner : MonoBehaviour
     private void SpawnCloud()
     {
         spawnerPos = transform.position;
-        print(spawnerPos);
         GameObject newCloud = GameObject.Instantiate(cloudPrefab, transform, false);
         newCloud.name = "Cloud_" + Time.frameCount;
         newCloud.transform.position = new Vector2(transform.position.x, transform.position.y + Random.Range(minYOffset, maxYOffset));

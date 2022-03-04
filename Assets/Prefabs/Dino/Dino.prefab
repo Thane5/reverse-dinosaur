@@ -117,6 +117,7 @@ GameObject:
   - component: {fileID: 1687890282706072655}
   - component: {fileID: 1687890282706072654}
   - component: {fileID: 3736185639742560769}
+  - component: {fileID: -4547370838839663836}
   m_Layer: 3
   m_Name: Dino
   m_TagString: Untagged
@@ -193,3 +194,18 @@ CapsuleCollider2D:
   m_Offset: {x: -0.055734873, y: 0.16014573}
   m_Size: {x: 0.23046684, y: 0.31857628}
   m_Direction: 0
+--- !u!114 &-4547370838839663836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687890282706072627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8496bb0f76dd0694ebbf19039759772d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGrounded: 1
+  Foresight: 0.25
+  JumpHeight: 6
