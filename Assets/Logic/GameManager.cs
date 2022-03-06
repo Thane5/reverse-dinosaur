@@ -10,8 +10,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] TMP_Text scoreText;
     [SerializeField] public GameObject winScreen;
     [SerializeField] public GameObject obstaclePanel;
-
-
     private bool isPlaying = false;
     public int aliveDinosaurs = 3;
     float timer;

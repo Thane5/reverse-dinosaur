@@ -15,6 +15,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.22
       objectReference: {fileID: 0}
+    - target: {fileID: 2162212156593538855, guid: ed9567c02480f7843bdf068deba9ed05, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2162212156593538855, guid: ed9567c02480f7843bdf068deba9ed05, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 4219165855382926983, guid: ed9567c02480f7843bdf068deba9ed05, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -98,6 +106,10 @@ PrefabInstance:
     - target: {fileID: 9040138125154075315, guid: ed9567c02480f7843bdf068deba9ed05, type: 3}
       propertyPath: m_Name
       value: Cactus_Big01
+      objectReference: {fileID: 0}
+    - target: {fileID: 9040138125154075315, guid: ed9567c02480f7843bdf068deba9ed05, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed9567c02480f7843bdf068deba9ed05, type: 3}

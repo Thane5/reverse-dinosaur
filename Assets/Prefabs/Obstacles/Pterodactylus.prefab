@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5063271593343986990}
   m_Layer: 6
   m_Name: Sprite
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 6164897464063859650}
   m_Layer: 6
   m_Name: Pterodactylus
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
