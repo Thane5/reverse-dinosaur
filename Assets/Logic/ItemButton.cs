@@ -6,7 +6,6 @@ public class ItemButton : MonoBehaviour
 {
     [SerializeField] float fallSpeed = 1f;
     public bool isFalling = true;
-    private int collisionCounter = 0;
     private bool reachedBottom = false;
 
     // Start is called before the first frame update
@@ -22,8 +21,6 @@ public class ItemButton : MonoBehaviour
         {
             this.transform.Translate(Vector2.down * fallSpeed / 100);
         }
-        //else print("Not Falling");
-
     }
 
     void OnTriggerEnter2D(Collider2D col)
@@ -41,15 +38,19 @@ public class ItemButton : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D col)
     {
-        if (reachedBottom == false)
+        //Make sure the Button has not yet reached the bottom && that the Exit has been triggered by the top collider of another button
+        if (reachedBottom == false && col.gameObject.layer == LayerMask.NameToLayer("Button Top"))
         {
             isFalling = true;
         }
     }
 
+    //This is a "SendMessage" from the button component
     void ClickSignal()
     {
+        // Remove this button from the Singelton button counter
         Global.ButtonCounter--;
+        // And commit sudoku
         Destroy(this.gameObject);
     }
 }
