@@ -44,13 +44,13 @@ public class DinoBrain : MonoBehaviour
             // The RaycastHit2D always returns null, unless the hit was from the masked layer
             if (hitLayerName == "Big Obstacles")
             {
-                print("Big Jump");
+                //print("Big Jump");
                 dinoRigidbody.AddForce(new Vector2(0, bigJumpHeight), ForceMode2D.Impulse);
             }
 
             if (hitLayerName == "Small Obstacles")
             {
-                print("Small Jump");
+                //print("Small Jump");
             }
         }
     }
@@ -62,13 +62,13 @@ public class DinoBrain : MonoBehaviour
 
         if (collisionLayerName == "Ground")
         {
-            print("Collided with ground...");
+            //print("Collided with ground...");
             isGrounded = true;
         }
 
         if (collisionLayerName == "Big Obstacles" || collisionLayerName == "Small Obstacles")
         {
-            print("Collided with obstacle!");
+            //print("Collided with obstacle!");
             dinoRigidbody.isKinematic = true;
             this.transform.SetParent(collision.transform);
         }
