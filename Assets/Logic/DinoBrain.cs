@@ -5,6 +5,7 @@ using UnityEngine;
 public class DinoBrain : MonoBehaviour
 {
     [SerializeField] GameObject sensorOrigin;
+    [SerializeField] Animator animator;
     [SerializeField] float sensorDistance = 0.25f;
     [SerializeField] bool isGrounded = true;
     [SerializeField] float bigJumpHeight = 6;
@@ -44,6 +45,7 @@ public class DinoBrain : MonoBehaviour
             isGrounded = false;
             //Now Check what layer of the object and save the layer name as a string
             hitLayerName = LayerMask.LayerToName(sensorHit.transform.gameObject.layer);
+            animator.SetTrigger("Jump");
 
             // The RaycastHit2D always returns null, unless the hit was from the masked layer
             if (hitLayerName == "Big Obstacles")
@@ -69,6 +71,7 @@ public class DinoBrain : MonoBehaviour
         {
             //print("Collided with ground...");
             isGrounded = true;
+            animator.ResetTrigger("Jump");
         }
 
         if (collisionLayerName == "Big Obstacles" || collisionLayerName == "Small Obstacles")
@@ -77,6 +80,7 @@ public class DinoBrain : MonoBehaviour
             dinoRigidbody.isKinematic = true;
             this.transform.SetParent(collision.transform);
             Global.AliveDinosaurs--;
+            animator.SetTrigger("Die");
         }
 
         if (collisionLayerName == "Dino")
