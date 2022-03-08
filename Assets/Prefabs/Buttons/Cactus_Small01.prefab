@@ -93,7 +93,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 593078365398892563, guid: 08ee1ec544cc21f4a8c15dca1eb90d16, type: 3}
       propertyPath: m_Name
-      value: Small Cactus
+      value: Cactus_Small01
+      objectReference: {fileID: 0}
+    - target: {fileID: 593078365686705316, guid: 08ee1ec544cc21f4a8c15dca1eb90d16, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 2817903392586697966, guid: 16900192ce4f25648a23c0898ef0627a, type: 3}
+    - target: {fileID: 593078365686705317, guid: 08ee1ec544cc21f4a8c15dca1eb90d16, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 593078365686705317, guid: 08ee1ec544cc21f4a8c15dca1eb90d16, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 35
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08ee1ec544cc21f4a8c15dca1eb90d16, type: 3}

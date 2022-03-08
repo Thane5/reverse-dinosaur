@@ -7,6 +7,9 @@ public class ButtonSpawner : MonoBehaviour
     [SerializeField] GameObject[] buttonArray;
     [SerializeField] float minWaitTime = 0.3f;
     [SerializeField] float maxWaitTime = 3f;
+
+    //This reference will be injected into new instances so that they can communicate
+    [SerializeField] ObstacleSpawner obsSpawner;
     float waitTime;
     bool isWaiting = false;
 
@@ -28,8 +31,11 @@ public class ButtonSpawner : MonoBehaviour
 
     void SpawnButton()
     {
-        int pickElement = Random.Range(0, 4);
+        int pickElement = Random.Range(0, 5);
         GameObject newButton = GameObject.Instantiate(buttonArray[pickElement], transform, false);
+        // Inject the reference to the obstacle spawner into the new object
+        newButton.GetComponent<ItemButton>().ObsSpawner = obsSpawner;
+        newButton.GetComponent<ItemButton>().Identifier = pickElement;
         StartCoroutine("SpawnTimer");
         Global.ButtonCounter++;
     }

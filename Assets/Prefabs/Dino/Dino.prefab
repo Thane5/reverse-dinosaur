@@ -208,9 +208,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sensorOrigin: {fileID: 7307185509840055577}
-  sensorDistance: 0.25
+  sensorDistance: 0.4
   isGrounded: 1
-  jumpHeight: 6
+  bigJumpHeight: 6
+  smallJumpHeight: 5
   obstacleLayers:
     serializedVersion: 2
     m_Bits: 192

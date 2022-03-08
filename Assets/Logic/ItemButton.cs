@@ -6,6 +6,11 @@ public class ItemButton : MonoBehaviour
 {
     [SerializeField] float fallSpeed = 1f;
     public bool isFalling = true;
+
+    public int Identifier;
+
+    // The GameObject reference here is injected on creation by the Button Spawner
+    public ObstacleSpawner ObsSpawner;
     private bool reachedBottom = false;
 
     // Start is called before the first frame update
@@ -25,8 +30,6 @@ public class ItemButton : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        print(col.gameObject.layer);
-
         //Layer 9 is the layer for Button Catcher
         if (col.gameObject.layer == 9)
         {
@@ -50,6 +53,9 @@ public class ItemButton : MonoBehaviour
     {
         // Remove this button from the Singelton button counter
         Global.ButtonCounter--;
+        ObsSpawner.Identifier = Identifier;
+        ObsSpawner.SendMessage("SpawnObstacle");
+
         // And commit sudoku
         Destroy(this.gameObject);
     }

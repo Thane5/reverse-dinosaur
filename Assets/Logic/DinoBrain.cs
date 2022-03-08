@@ -23,6 +23,10 @@ public class DinoBrain : MonoBehaviour
     void FixedUpdate()
     {
         ObstacleSensor();
+        if (transform.position.x <= -5)
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     // This uses a CircleCast2D as a sensor to detect incoming obstacles
@@ -51,6 +55,7 @@ public class DinoBrain : MonoBehaviour
             if (hitLayerName == "Small Obstacles")
             {
                 //print("Small Jump");
+                dinoRigidbody.AddForce(new Vector2(0, smallJumpHeight), ForceMode2D.Impulse);
             }
         }
     }
@@ -71,11 +76,12 @@ public class DinoBrain : MonoBehaviour
             //print("Collided with obstacle!");
             dinoRigidbody.isKinematic = true;
             this.transform.SetParent(collision.transform);
+            Global.AliveDinosaurs--;
         }
 
         if (collisionLayerName == "Dino")
         {
-            dinoRigidbody.AddForce(new Vector2(0, smallJumpHeight), ForceMode2D.Impulse);
+            dinoRigidbody.velocity = Vector2.up * 5;
         }
     }
 }

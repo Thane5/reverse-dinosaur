@@ -11,7 +11,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] public GameObject winScreen;
     [SerializeField] public GameObject obstaclePanel;
     private bool isPlaying = false;
-    public int aliveDinosaurs = 3;
     float timer;
 
     // Start is called before the first frame update
@@ -25,7 +24,7 @@ public class GameManager : MonoBehaviour
     {
         if (isPlaying)
         {
-            if (aliveDinosaurs <= 0)
+            if (Global.AliveDinosaurs <= 0)
             {
                 PauseGame();
             }
@@ -45,8 +44,8 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         timer = 0;
-
         winScreen.SetActive(false);
+        Global.AliveDinosaurs = 3;
 
         Time.timeScale = 1;
         isPlaying = true;
