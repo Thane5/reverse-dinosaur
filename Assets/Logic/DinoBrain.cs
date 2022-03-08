@@ -11,6 +11,8 @@ public class DinoBrain : MonoBehaviour
     [SerializeField] float bigJumpHeight = 6;
     [SerializeField] float smallJumpHeight = 5;
     [SerializeField] LayerMask obstacleLayers;
+    [SerializeField] AudioClip deathSound;
+    AudioSource audioSource;
 
     private Rigidbody2D dinoRigidbody;
 
@@ -18,6 +20,7 @@ public class DinoBrain : MonoBehaviour
     void Start()
     {
         dinoRigidbody = GetComponent<Rigidbody2D>();
+        audioSource = FindObjectOfType<AudioSource>();
     }
 
     // Update is called once per frame
@@ -81,6 +84,11 @@ public class DinoBrain : MonoBehaviour
             this.transform.SetParent(collision.transform);
             Global.AliveDinosaurs--;
             animator.SetTrigger("Die");
+
+            if (Global.AliveDinosaurs >= 1)
+            {
+                audioSource.PlayOneShot(deathSound);
+            }
         }
 
         if (collisionLayerName == "Dino")

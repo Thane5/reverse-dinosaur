@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] TMP_Text scoreText;
     [SerializeField] public GameObject winScreen;
     [SerializeField] public GameObject obstaclePanel;
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip winSound;
     private bool isPlaying = false;
     float timer;
 
@@ -58,6 +60,7 @@ public class GameManager : MonoBehaviour
             timerText.gameObject.SetActive(false);
             obstaclePanel.gameObject.SetActive(false);
             winScreen.SetActive(true);
+            audioSource.PlayOneShot(winSound);
 
             Time.timeScale = 0;
             isPlaying = false;

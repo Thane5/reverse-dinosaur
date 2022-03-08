@@ -216,6 +216,7 @@ MonoBehaviour:
   obstacleLayers:
     serializedVersion: 2
     m_Bits: 192
+  deathSound: {fileID: 8300000, guid: c75d864856e6de84b8b54985aae8d1e1, type: 3}
 --- !u!1 &7307185509840055577
 GameObject:
   m_ObjectHideFlags: 0
