@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
     {
         if (isPlaying)
         {
-            if (Global.AliveDinosaurs <= 0 || timer == 9999.9f)
+            if (Global.AliveDinosaurs <= 0 || timer > 9999.9f)
             {
                 PauseGame();
             }
