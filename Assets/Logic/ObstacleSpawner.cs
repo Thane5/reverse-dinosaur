@@ -23,7 +23,8 @@ public class ObstacleSpawner : MonoBehaviour
 
     void SpawnObstacle()
     {
-        GameObject newButton = GameObject.Instantiate(obstacleArray[Identifier], transform, false);
+        GameObject newObstacle = GameObject.Instantiate(obstacleArray[Identifier], transform, false);
+        newObstacle.name = obstacleArray[Identifier].gameObject.name + "_@" + Time.frameCount;
         audioSource.PlayOneShot(buttonSound);
     }
 }

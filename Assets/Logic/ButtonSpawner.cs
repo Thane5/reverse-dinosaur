@@ -33,6 +33,8 @@ public class ButtonSpawner : MonoBehaviour
     {
         int pickElement = Random.Range(0, 5);
         GameObject newButton = GameObject.Instantiate(buttonArray[pickElement], transform, false);
+        newButton.name = "Button_" + buttonArray[pickElement].gameObject.name + "_@" + Time.frameCount;
+
         // Inject the reference to the obstacle spawner into the new object
         newButton.GetComponent<ItemButton>().ObsSpawner = obsSpawner;
         newButton.GetComponent<ItemButton>().Identifier = pickElement;

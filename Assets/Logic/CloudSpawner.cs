@@ -20,7 +20,7 @@ public class CloudSpawner : MonoBehaviour
     {
         spawnerPos = transform.position;
         GameObject newCloud = GameObject.Instantiate(cloudPrefab, transform, false);
-        newCloud.name = "Cloud_" + Time.frameCount;
+        newCloud.name = "Cloud_@" + Time.frameCount;
         newCloud.transform.position = new Vector2(transform.position.x, transform.position.y + Random.Range(minYOffset, maxYOffset));
         StartCoroutine("SpawnTimer");
     }

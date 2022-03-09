@@ -7,9 +7,9 @@ public class CloudMovement : MonoBehaviour
     [SerializeField] float moveSpeed = 0.5f;
     void Start()
     {
-        transform.name = "Cloud_" + Time.frameCount;
-        //transform.position = Vector3.zero;
+
     }
+
     // Update is called once per frame
     void Update()
     {
