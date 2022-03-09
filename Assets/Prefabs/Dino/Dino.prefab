@@ -212,7 +212,7 @@ MonoBehaviour:
   sensorDistance: 0.4
   isGrounded: 1
   bigJumpHeight: 6
-  smallJumpHeight: 5
+  smallJumpHeight: 4.5
   obstacleLayers:
     serializedVersion: 2
     m_Bits: 192

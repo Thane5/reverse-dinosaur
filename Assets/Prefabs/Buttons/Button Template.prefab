@@ -201,7 +201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3de60581d6cda6419bf3d8a99570109, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallSpeed: 1.2
+  fallSpeed: 1.8
   isFalling: 1
   Identifier: 0
   ObsSpawner: {fileID: 0}

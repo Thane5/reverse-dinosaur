@@ -1109,7 +1109,7 @@ MonoBehaviour:
   - {fileID: 4750336220968741461, guid: 229637b2cd5370a479a40c67e6b43b9a, type: 3}
   - {fileID: 6035009327166710268, guid: 4a07581bd2269d74f84aa74e72442051, type: 3}
   minWaitTime: 1.5
-  maxWaitTime: 3
+  maxWaitTime: 2.5
   obsSpawner: {fileID: 923179586}
 --- !u!1 &1374168541
 GameObject:

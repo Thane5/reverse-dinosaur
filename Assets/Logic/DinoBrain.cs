@@ -39,6 +39,9 @@ public class DinoBrain : MonoBehaviour
         RaycastHit2D sensorHit;
         string hitLayerName;
 
+        //Randomize the distance of the circleCast2D so that the Dinos have more "human" reaction times
+        sensorDistance = Random.Range(0.3f, 0.5f);
+
         //Make a CircleCast, and save its return value (a RaycastHit2D) as a variable
         sensorHit = Physics2D.CircleCast(sensorOrigin.transform.position, 0.25f, Vector2.right, sensorDistance, obstacleLayers);
 
@@ -83,6 +86,7 @@ public class DinoBrain : MonoBehaviour
             dinoRigidbody.isKinematic = true;
             this.transform.SetParent(collision.transform);
             Global.AliveDinosaurs--;
+            print("AliveDinosaurs: " + Global.AliveDinosaurs);
             animator.SetTrigger("Die");
 
             if (Global.AliveDinosaurs >= 1)

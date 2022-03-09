@@ -51,6 +51,7 @@ public class GameManager : MonoBehaviour
 
         Time.timeScale = 1;
         isPlaying = true;
+        print("Restarted Game. AliveDinosaurs: " + Global.AliveDinosaurs);
     }
 
     public void PauseGame()
