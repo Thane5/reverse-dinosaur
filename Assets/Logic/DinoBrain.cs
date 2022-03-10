@@ -13,6 +13,7 @@ public class DinoBrain : MonoBehaviour
     [SerializeField] LayerMask obstacleLayers;
     [SerializeField] AudioClip deathSound;
     AudioSource audioSource;
+    private bool isAlive = true;
 
     private Rigidbody2D dinoRigidbody;
 
@@ -71,33 +72,38 @@ public class DinoBrain : MonoBehaviour
     // Collisions with the ground, obstacles and other dinosaurs
     void OnCollisionEnter2D(Collision2D collision)
     {
-        string collisionLayerName = LayerMask.LayerToName(collision.gameObject.layer);
-
-        if (collisionLayerName == "Ground")
+        if (isAlive)
         {
-            //print("Collided with ground...");
-            isGrounded = true;
-            animator.ResetTrigger("Jump");
-        }
+            //Get the Collider's layer's name, so that we can compare it more easily 
+            string collisionLayerName = LayerMask.LayerToName(collision.gameObject.layer);
 
-        if (collisionLayerName == "Big Obstacles" || collisionLayerName == "Small Obstacles")
-        {
-            //print("Collided with obstacle!");
-            dinoRigidbody.isKinematic = true;
-            this.transform.SetParent(collision.transform);
-            Global.AliveDinosaurs--;
-            print("AliveDinosaurs: " + Global.AliveDinosaurs);
-            animator.SetTrigger("Die");
-
-            if (Global.AliveDinosaurs >= 1)
+            if (collisionLayerName == "Ground")
             {
-                audioSource.PlayOneShot(deathSound);
+                //print("Collided with ground...");
+                isGrounded = true;
+                animator.ResetTrigger("Jump");
             }
-        }
 
-        if (collisionLayerName == "Dino")
-        {
-            dinoRigidbody.velocity = Vector2.up * 5;
+            if (collisionLayerName == "Big Obstacles" || collisionLayerName == "Small Obstacles")
+            {
+                //print("Collided with obstacle!");
+                isAlive = false;
+                dinoRigidbody.isKinematic = true;
+                this.transform.SetParent(collision.transform);
+                Global.AliveDinosaurs--;
+                animator.SetTrigger("Die");
+
+                if (Global.AliveDinosaurs >= 1)
+                {
+                    audioSource.PlayOneShot(deathSound);
+                }
+                print(this.gameObject.name + " [isAlive: " + isAlive + "] Global [AliveDinosaurs: " + Global.AliveDinosaurs + "]");
+            }
+
+            if (collisionLayerName == "Dino")
+            {
+                dinoRigidbody.velocity = Vector2.up * 5;
+            }
         }
     }
 }
